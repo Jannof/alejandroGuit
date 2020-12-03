@@ -14,19 +14,15 @@ body {
     
     
 }
-
-header {
-    position: absolute;
-    
-    width: 100%;
-}
 .header {
-    position: relative;
+    width: 100vw;
+    height: 4rem;
+    position: absolute;
     display: flex;
     justify-content: flex-end;
-    
 }
-.menu__container {
+
+.menu_nav {
     position: fixed;
     background-color: rgb(255, 124, 9);
     display: flex;
@@ -37,17 +33,13 @@ header {
     text-align: center;
     z-index: 1000;
     overflow: hidden;
-   
-
-    
-    
     
 }
+
 
 .menu-items{
     
     display: flex;
-   
     list-style: none;
     
 
@@ -73,27 +65,48 @@ a {
     
     width: auto;
     height: 100vh;
-    display: flex;
-    align-items: flex-end;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: start;
     background-image: url(../images/janoguitarra.jpg) ;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.logo {
-  
-    font-family: 'Suez One', serif;
-    font-size: 1000%;
-    font-weight: normal;
-    line-height: 9rem;
-    letter-spacing: 0.8rem;
-    color: rgba(255, 248, 220, 0.893);
-    padding-left: 40px;
-    padding-bottom:100px;
+.logo_container {
+    
+    width: 50vw;
    
+}
+.logo {
+    font-family: 'Suez One', serif;
+    font-size: 4vw;
+    font-weight: normal;
+    line-height: 9vh;
+    padding-left: 4rem;
+    color: rgba(255, 248, 220, 0.893);
+}
+
+.items_home {
+    padding-left: 4rem;
+    font-size: 4vh;
+    font-weight: 100;
+    line-height: 2em;
+}
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: auto;
+    padding-left: 1rem;
     
-    
+}
+
+.fab {
+    color: rgb(255, 124, 9);
+    font-size: 2vw;
 }
 
 
