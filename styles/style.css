@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    color: rgba(255, 248, 220, 0.838);
+    font-family: 'PT Sans Narrow', sans-serif;
+    height: 100%;
+    width: auto;
+    overflow-x: hidden;
+    
+    
+}
+
+header {
+    position: absolute;
+    
+    width: 100%;
+}
+.header {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.menu__container {
+    position: fixed;
+    background-color: rgb(255, 124, 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    z-index: 1000;
+    overflow: hidden;
+   
+
+    
+    
+    
+}
+
+.menu-items{
+    
+    display: flex;
+   
+    list-style: none;
+    
+
+}
+.menu-items li {
+    
+    margin-left: 5rem;
+    letter-spacing: 0.5rem;
+    font-weight: lighter;
+}
+
+a {
+    color: rgba(255, 248, 220, 0.838);
+    text-decoration: none;
+    outline: none;
+}
+.menu-items a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.home {
+    
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(/images/janoguitarra.jpg) ;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.logo {
+  
+    font-family: 'Suez One', serif;
+    font-size: 1000%;
+    font-weight: normal;
+    line-height: 9rem;
+    letter-spacing: 0.8rem;
+    color: rgba(255, 248, 220, 0.893);
+    padding-left: 40px;
+    padding-bottom:100px;
+   
+    
+    
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-left: 30px;
+    
+}
+
+.carousel__container {
+    
+    
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carousel-item {
+    
+    display: inline-block;
+    background-color: dimgray;
+    opacity: 0.3;
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 450ms;
+    transform-origin: center left;
+
+}
+.carousel-item:hover ~ .carousel-item {
+    transform: translate3d(250px, 0, 0);
+}
+
+.carousel__container:hover .carousel-item {
+    opacity: 0.4;
+}
+
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(2.0);
+    opacity: 1;
+}
+
+.carousel-item__img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+   opacity: 1;
+    
+}
+
+.transcriptions {
+    width: 100%;
+    background-color: white;
+}
+.titulo-transcription {
+    color: rgb(36, 36, 36);
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    width: 100vw;
+    padding-left: 3rem;
+    padding-top: 8rem;
+    
+    
+}
+
+.background-container {
+    width: fit-content;
+    height: auto;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    grid-template-columns: repeat(3, 0.2fr);
+    margin: auto;
+    margin-top: 10rem;
+    padding-bottom: 100px;
+
+}
+.tabs {
+    display: grid;
+    box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.2);
+    width: 25rem;
+    height:25rem;
+    background-color:rgb(36, 36, 36);
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 450ms;
+    transform-origin: center left;
+}
+
+
+
+/* .tabs:hover ~ .tabs {
+    
+    transform: translate3d();
+    
+} */
+
+
+
+.background-container:hover .tabs {
+    opacity: 0.4;
+}
+
+.background-container:hover .tabs:hover {
+    opacity: 0.4;
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: none;
+}
+
+.tabs__img {
+    width: 25rem;
+    height: 17rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tabs1__titulo {
+    color: white;
+    text-align: center;
+    font-size: 1.05rem;
+    padding-top: 5px;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.button__container {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.free__button {
+    
+    width: 20%;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 10px;
+    border-style: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    background-color:rgb(255, 134, 28);
+    color: white;
+    
+}
+.free__button:hover {
+    border-style: none;
+    
+}
+
+.titulo-music {
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    width: 100vw;
+    padding-left: 3rem;
+    padding-top: 10rem;
+    
+    
+}
+
+.contact-footer {
+    position: absolute;
+    width: 100%;
+    height: 12.5vh;
+    background-color:rgb(255, 137, 46);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact__title {
+    color: rgb(36, 36, 36);
+}
+
+
