@@ -75,7 +75,7 @@ a {
     height: 100vh;
     display: flex;
     align-items: flex-end;
-    background-image: url(/images/janoguitarra.jpg) ;
+    background-image: url(../images/janoguitarra.jpg) ;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
